@@ -11,15 +11,15 @@ const HeroContent = {
 
 function HeroSection() {
   return (
-    <div className="w-full flex gap-10 md:flex-row flex-col-reverse md:justify-between md:items-start items-center my-14 py-10 border-b-2 border-black">
-      <div className="md:w-2/3 w-full px-5 flex-col flex  ">
-        <div className="flex-col flex gap-8 text-gray-400">
+    <div className="w-full flex md:gap-10  md:flex-row flex-col-reverse md:justify-between md:items-start items-center md:my-14 md:py-10 mb-14 pb-10 border-b-2 border-black">
+      <div className="md:w-2/3 w-full md:px-5 flex-col flex  ">
+        <div className="flex-col flex md:gap-8 gap-5 text-gray-400">
           <p className="text-xl tracking-wider">WELCOME TO MY WORLD</p>
-          <h1 className="text-5xl font-bold tracking-wider text-white">
+          <h1 className="md:text-5xl text-2xl font-bold tracking-wider text-white">
             Hi, I’m <span className="text-red-500">{HeroContent.name}</span>
           </h1>
           {/* <h2 className="text-5xl font-bold tracking-wider text-white"> a {HeroContent.job[0]}</h2> */}
-          <div className="text-5xl font-bold tracking-wider text-white">
+          <div className="md:text-5xl text-2xl font-bold tracking-wider text-white">
             <Typewriter
               options={{
                   loop: true
@@ -63,7 +63,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="md:w-1/3 w-full flex justify-center items-center">
+      <div className="md:w-1/3 w-full flex justify-center items-center my-4">
         <div className="bg-[url('/src/assets/images/avatarNT.JPG')] bg-cover bg-center md:h-96 md:w-72 h-72 w-full rounded-sm ring-2 ring-offset-2 ring-offset-slate-400 ring-white"></div>
       </div>
     </div>

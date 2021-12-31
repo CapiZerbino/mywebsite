@@ -10,7 +10,7 @@ const SocialType = [
 
 function SocialIcon({type}) {
     return (
-        <div className="w-16 h-16 bg-black opacity-80 rounded-lg drop-shadow-lg  text-white text-4xl flex flex-row justify-center items-center hover:bg-black hover:opacity-100">
+        <div className="md:w-16 md:h-16 w-10 h-10 bg-black opacity-80 rounded-lg drop-shadow-lg  text-white md:text-4xl text-2xl flex flex-row justify-center items-center hover:bg-black hover:opacity-100">
             {type === "facebook" && (
                 <a href="">
                 <FaFacebookF></FaFacebookF>
