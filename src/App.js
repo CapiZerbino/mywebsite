@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/UI/Footer";
 import Navigation from "./components/UI/Navigation";
 import HomePage from "./pages/HomePage";
@@ -9,11 +9,11 @@ function App() {
     <div className="w-full h-full bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Navigation></Navigation>
-        <Router>
+        <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<HomePage />}></Route>
           </Routes>
-        </Router>
+        </BrowserRouter>
         <Footer></Footer>
       </div>
     </div>
